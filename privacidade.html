@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade — Diário de Bordo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--petrol:#16324F;--ambar:#E8A317;--papel:#EDF1F4;--tinta:#15212E;--cinza:#4A5866;--branco:#FFFFFF;--linha:#D3DBE2}
+@media (prefers-color-scheme:dark){:root{--papel:#0E1620;--tinta:#E6ECF1;--cinza:#A3B1BE;--branco:#16212D;--linha:#2A3847;--petrol:#7FB3E3}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:17px/1.65 "Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 24px 40px}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:36px}
+.voltar{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--petrol);font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:22px}
+.voltar svg{border-radius:9px}
+.lingua{border:1px solid var(--linha);background:var(--branco);color:var(--tinta);border-radius:8px;padding:6px 14px;font:inherit;font-size:15px;cursor:pointer}
+.lingua:focus-visible,a:focus-visible{outline:3px solid var(--ambar);outline-offset:3px}
+h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:clamp(38px,7vw,54px);line-height:1;margin:0 0 8px;color:var(--petrol)}
+.data{color:var(--cinza);margin:0 0 28px;font-size:15px}
+.resumo{background:var(--branco);border-left:5px solid var(--ambar);border-radius:0 10px 10px 0;padding:16px 20px;margin:0 0 8px}
+.resumo p{margin:0}
+h2{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:25px;margin:36px 0 8px;color:var(--petrol)}
+p,li{max-width:38em}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:22px}li{margin:4px 0}
+a{color:var(--petrol);font-weight:600;text-underline-offset:3px}
+footer{margin-top:48px;padding-top:18px;border-top:3px solid var(--ambar);font-size:15px;color:var(--cinza)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <div class="topo">
+    <a class="voltar" href="./"><svg width="34" height="34" viewBox="0 0 240 240" aria-hidden="true"><rect width="240" height="240" rx="54" fill="#16324F"/><path d="M120 72 Q86 58 46 64 V180 Q86 174 120 188 Z" fill="#F2F5F7"/><path d="M120 72 Q154 58 194 64 V180 Q154 174 120 188 Z" fill="#DCE4EA"/><circle cx="162" cy="124" r="26" fill="none" stroke="#E8A317" stroke-width="7"/><circle cx="162" cy="124" r="7" fill="#E8A317"/></svg>Diário de Bordo</a>
+    <button class="lingua" type="button" id="btnLingua" aria-label="Mudar para inglês">English</button>
+  </div>
+
+  <article lang="pt-PT" data-lingua="pt">
+    <h1>Política de privacidade</h1>
+    <p class="data">Última atualização: novembro de 2026</p>
+    <div class="resumo"><p>Em resumo: os seus dados ficam no seu telemóvel. O Diário de Bordo não tem servidores, contas próprias, publicidade nem rastreio, e o programador não recebe nem tem acesso a nenhum dado seu. A cópia para o Google Drive é opcional e fica na sua própria conta Google.</p></div>
+
+    <h2>Quem é responsável</h2>
+    <p>O Diário de Bordo é uma app para Android desenvolvida a título pessoal. Para qualquer questão sobre privacidade, contacte <a href="mailto:pedro3ms@gmail.com">pedro3ms@gmail.com</a>.</p>
+
+    <h2>Que dados a app guarda</h2>
+    <p>Apenas o que o utilizador introduz: veículos (por exemplo matrícula, marca, modelo, número de quadro e quilómetros), tarefas de manutenção, reparações, inspeções, seguros, custos, notas e os documentos, fotografias e vídeos que decidir anexar.</p>
+
+    <h2>Onde ficam os dados</h2>
+    <p>No armazenamento do próprio telemóvel — na memória privada da app ou, se o utilizador o escolher nas Definições, numa pasta do telemóvel à sua escolha. Os dados não são enviados para nenhum servidor do programador, porque não existe nenhum.</p>
+
+    <h2>Cópia de segurança no Google Drive (opcional)</h2>
+    <p>Se o utilizador ativar esta opção e iniciar sessão com a sua conta Google, a app guarda uma cópia dos seus dados e anexos numa pasta do <strong>Google Drive dessa mesma conta</strong>. Para isso, pede apenas a autorização <em>drive.file</em>, que lhe permite ver e alterar só os ficheiros que a própria app cria — nunca o resto do Drive.</p>
+    <ul>
+      <li>Os dados seguem diretamente do telemóvel para a conta Google do utilizador, sem passar por outros servidores.</li>
+      <li>O programador não tem acesso a essa conta nem a esses ficheiros.</li>
+      <li>O utilizador pode desligar a cópia nas Definições, apagar a pasta no Drive e retirar o acesso à app em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    </ul>
+    <p>A utilização e a transferência, para qualquer outra app, de informações recebidas das APIs da Google cumprem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Utilizador dos Serviços API da Google</a>, incluindo os requisitos de Utilização Limitada.</p>
+
+    <h2>Leitura de documentos</h2>
+    <p>A leitura de texto em fotografias e PDF (Documento Único, faturas, carta verde, ficha de inspeção) é feita no próprio telemóvel. As imagens e os documentos não são enviados para fora do aparelho para serem lidos.</p>
+
+    <h2>Partilha</h2>
+    <p>Os dados só saem do telemóvel quando o utilizador o decide: ao partilhar um veículo ou uma intervenção (por exemplo, por Partilha rápida, WhatsApp ou email), ao exportar uma cópia ou ao abrir um anexo noutra app. A partir daí, o ficheiro fica sujeito às regras do serviço que o utilizador escolheu para o enviar.</p>
+
+    <h2>Permissões do telemóvel</h2>
+    <ul>
+      <li><strong>Câmara e fotografias:</strong> para fotografar documentos e anexar fotografias e vídeos.</li>
+      <li><strong>Notificações:</strong> para os lembretes de manutenção, inspeção e seguro.</li>
+      <li><strong>Ficheiros:</strong> para anexar documentos e, se o utilizador o escolher, guardar os dados numa pasta do telemóvel.</li>
+      <li><strong>Internet:</strong> apenas para a cópia opcional no Google Drive e para descarregar, uma vez, o módulo de leitura de texto.</li>
+    </ul>
+
+    <h2>Conservação e eliminação</h2>
+    <p>Os dados ficam no telemóvel até o utilizador os apagar na app ou desinstalar a app. As cópias no Google Drive ficam na conta do utilizador até ele as apagar.</p>
+
+    <h2>Alterações a esta política</h2>
+    <p>Se esta política mudar, a data no topo é atualizada.</p>
+  </article>
+
+  <article lang="en" data-lingua="en" hidden>
+    <h1>Privacy policy</h1>
+    <p class="data">Last updated: November 2026</p>
+    <div class="resumo"><p>In short: your data stays on your phone. Diário de Bordo has no servers, app accounts, ads or tracking, and the developer does not receive or have access to any of your data. The Google Drive backup is optional and stays in your own Google account.</p></div>
+
+    <h2>Who is responsible</h2>
+    <p>Diário de Bordo is an Android app developed in a personal capacity. For any privacy question, contact <a href="mailto:pedro3ms@gmail.com">pedro3ms@gmail.com</a>.</p>
+
+    <h2>What data the app keeps</h2>
+    <p>Only what the user enters: vehicles (for example plate, make, model, VIN and mileage), maintenance tasks, repairs, inspections, insurance, costs, notes, and any documents, photos and videos the user chooses to attach.</p>
+
+    <h2>Where the data is kept</h2>
+    <p>On the phone itself — in the app's private storage or, if the user chooses so in Settings, in a folder on the phone of their choice. The data is not sent to any server of the developer, because there is none.</p>
+
+    <h2>Google Drive backup (optional)</h2>
+    <p>If the user turns this on and signs in with their Google account, the app stores a copy of their data and attachments in a folder in <strong>that same account's Google Drive</strong>. To do so it requests only the <em>drive.file</em> permission, which lets it see and change only the files the app itself creates — never the rest of the Drive.</p>
+    <ul>
+      <li>The data goes straight from the phone to the user's Google account, without passing through any other server.</li>
+      <li>The developer has no access to that account or to those files.</li>
+      <li>The user can turn the backup off in Settings, delete the folder in Drive and remove the app's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    </ul>
+    <p>Diário de Bordo's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Reading documents</h2>
+    <p>Text in photos and PDFs (registration certificate, invoices, green card, inspection report) is read on the phone itself. Images and documents are not sent off the device to be read.</p>
+
+    <h2>Sharing</h2>
+    <p>Data only leaves the phone when the user decides so: when sharing a vehicle or a job (for example by Quick Share, WhatsApp or email), exporting a copy or opening an attachment in another app. From then on, the file is subject to the rules of the service the user chose to send it with.</p>
+
+    <h2>Phone permissions</h2>
+    <ul>
+      <li><strong>Camera and photos:</strong> to photograph documents and attach photos and videos.</li>
+      <li><strong>Notifications:</strong> for maintenance, inspection and insurance reminders.</li>
+      <li><strong>Files:</strong> to attach documents and, if the user chooses so, keep the data in a folder on the phone.</li>
+      <li><strong>Internet:</strong> only for the optional Google Drive backup and to download, once, the text-reading module.</li>
+    </ul>
+
+    <h2>Retention and deletion</h2>
+    <p>Data stays on the phone until the user deletes it in the app or uninstalls the app. Copies in Google Drive stay in the user's account until they delete them.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the date at the top is updated.</p>
+  </article>
+
+  <footer><span data-lingua="pt">Contacto</span><span data-lingua="en" hidden>Contact</span>: <a href="mailto:pedro3ms@gmail.com">pedro3ms@gmail.com</a></footer>
+</main>
+<script>
+(function(){
+  var btn=document.getElementById("btnLingua");
+  function aplicar(l){
+    document.querySelectorAll("[data-lingua]").forEach(function(e){e.hidden=e.getAttribute("data-lingua")!==l;});
+    document.documentElement.lang=l==="en"?"en":"pt-PT";
+    btn.textContent=l==="en"?"Português":"English";
+    btn.setAttribute("aria-label",l==="en"?"Switch to Portuguese":"Mudar para inglês");
+    document.title=l==="en"?"Privacy policy — Diário de Bordo":"Política de privacidade — Diário de Bordo";
+    document.querySelector(".voltar").setAttribute("href",l==="en"?"./#en":"./");
+  }
+  var atual=location.hash==="#en"?"en":"pt";aplicar(atual);
+  btn.addEventListener("click",function(){atual=atual==="en"?"pt":"en";aplicar(atual);history.replaceState(null,"",atual==="en"?"#en":location.pathname);});
+})();
+</script>
+</body>
+</html>

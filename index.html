@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diário de Bordo — manutenção de veículos</title>
+<meta name="description" content="Diário de Bordo: app Android para registar a manutenção, as reparações, a inspeção e o seguro de carros, motas, máquinas e tratores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--petrol:#16324F;--ambar:#E8A317;--papel:#EDF1F4;--tinta:#15212E;--cinza:#4A5866;--branco:#FFFFFF;--linha:#D3DBE2}
+@media (prefers-color-scheme:dark){:root{--papel:#0E1620;--tinta:#E6ECF1;--cinza:#A3B1BE;--branco:#16212D;--linha:#2A3847;--petrol:#7FB3E3}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font:17px/1.6 "Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:56px 24px 40px}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}
+.lingua{border:1px solid var(--linha);background:var(--branco);color:var(--tinta);border-radius:8px;padding:6px 14px;font:inherit;font-size:15px;cursor:pointer}
+.lingua:focus-visible,a:focus-visible{outline:3px solid var(--ambar);outline-offset:3px}
+.marca{display:flex;align-items:center;gap:22px;margin-bottom:28px}
+.marca svg{flex:none;border-radius:26px;box-shadow:0 12px 30px rgba(22,50,79,.25)}
+h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:clamp(46px,9vw,72px);line-height:.95;margin:0;color:var(--petrol);letter-spacing:-.01em}
+.lead{font-size:20px;color:var(--tinta);margin:0 0 36px;max-width:34em}
+h2{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:26px;margin:40px 0 12px;color:var(--petrol)}
+dl{margin:0;border-top:1px solid var(--linha)}
+dl div{display:grid;grid-template-columns:11em 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--linha)}
+dt{font-weight:600}
+dd{margin:0;color:var(--cinza)}
+p{margin:0 0 14px;max-width:38em}
+a{color:var(--petrol);font-weight:600;text-underline-offset:3px}
+footer{margin-top:56px;padding-top:20px;border-top:3px solid var(--ambar);font-size:15px;color:var(--cinza)}
+footer p{margin:0 0 6px}
+@media (max-width:560px){dl div{grid-template-columns:1fr;gap:2px}.marca{gap:16px}.marca svg{width:84px;height:84px;border-radius:20px}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <div class="topo"><span></span><button class="lingua" type="button" id="btnLingua" aria-label="Mudar para inglês">English</button></div>
+
+  <div class="marca">
+    <svg width="112" height="112" viewBox="0 0 240 240" role="img" aria-label="Logótipo do Diário de Bordo"><rect width="240" height="240" rx="54" fill="#16324F"/><path d="M120 72 Q86 58 46 64 V180 Q86 174 120 188 Z" fill="#F2F5F7"/><path d="M120 72 Q154 58 194 64 V180 Q154 174 120 188 Z" fill="#DCE4EA"/><line x1="120" y1="72" x2="120" y2="188" stroke="#16324F" stroke-width="3"/><g stroke="#9AAAB8" stroke-width="5" stroke-linecap="round"><line x1="64" y1="96" x2="108" y2="96"/><line x1="64" y1="114" x2="108" y2="114"/><line x1="64" y1="132" x2="108" y2="132"/><line x1="64" y1="150" x2="108" y2="150"/></g><circle cx="162" cy="124" r="26" fill="none" stroke="#E8A317" stroke-width="7"/><g stroke="#E8A317" stroke-width="6" stroke-linecap="round"><line x1="162" y1="130" x2="162" y2="150"/><line x1="157.1" y1="120.5" x2="141" y2="108.7"/><line x1="166.9" y1="120.5" x2="183" y2="108.7"/></g><circle cx="162" cy="124" r="7" fill="#E8A317"/></svg>
+    <h1>Diário de Bordo</h1>
+  </div>
+
+  <div lang="pt-PT" data-lingua="pt">
+    <p class="lead">Uma app Android para registar a manutenção, as reparações, a inspeção e o seguro dos seus veículos — carros, jipes, motas, bicicletas, máquinas e tratores.</p>
+    <h2>O que faz</h2>
+    <dl>
+      <div><dt>Manutenção</dt><dd>Planos por quilómetros, meses ou horas de motor, com avisos antes de cada tarefa.</dd></div>
+      <div><dt>Reparações</dt><dd>O que está por reparar e o que já foi feito, com material, custos, fotografias e vídeos.</dd></div>
+      <div><dt>Documentos</dt><dd>Leitura do Documento Único, de faturas, da carta verde e da ficha de inspeção, por fotografia ou PDF.</dd></div>
+      <div><dt>Lembretes</dt><dd>Inspeção, seguro e manutenções, mesmo com a app fechada.</dd></div>
+      <div><dt>Partilha</dt><dd>Envio de um veículo ou de uma intervenção entre a oficina e o cliente.</dd></div>
+      <div><dt>Cópia de segurança</dt><dd>Opcional, para o Google Drive do próprio utilizador.</dd></div>
+    </dl>
+    <h2>Os seus dados</h2>
+    <p>Os dados ficam no telemóvel de quem usa a app. Não há contas próprias, servidores, publicidade nem rastreio. Leia a <a href="privacidade.html">política de privacidade</a>.</p>
+  </div>
+
+  <div lang="en" data-lingua="en" hidden>
+    <p class="lead">An Android app to keep track of the maintenance, repairs, inspection and insurance of your vehicles — cars, 4x4s, motorcycles, bicycles, machines and tractors.</p>
+    <h2>What it does</h2>
+    <dl>
+      <div><dt>Maintenance</dt><dd>Plans by kilometres, months or engine hours, with reminders before each task.</dd></div>
+      <div><dt>Repairs</dt><dd>What still needs fixing and what has been done, with material, costs, photos and videos.</dd></div>
+      <div><dt>Documents</dt><dd>Reads the registration certificate, invoices, the green card and the inspection report, from a photo or PDF.</dd></div>
+      <div><dt>Reminders</dt><dd>Inspection, insurance and maintenance, even when the app is closed.</dd></div>
+      <div><dt>Sharing</dt><dd>Send a vehicle or a single job between a garage and its customer.</dd></div>
+      <div><dt>Backup</dt><dd>Optional, to the user's own Google Drive.</dd></div>
+    </dl>
+    <h2>Your data</h2>
+    <p>Your data stays on the phone of whoever uses the app. There are no app accounts, servers, ads or tracking. Read the <a href="privacidade.html#en">privacy policy</a>.</p>
+  </div>
+
+  <footer>
+    <p data-lingua="pt">Contacto: <a href="mailto:pedro3ms@gmail.com">pedro3ms@gmail.com</a></p>
+    <p data-lingua="en" hidden>Contact: <a href="mailto:pedro3ms@gmail.com">pedro3ms@gmail.com</a></p>
+  </footer>
+</main>
+<script>
+(function(){
+  var btn=document.getElementById("btnLingua");
+  function aplicar(l){
+    document.querySelectorAll("[data-lingua]").forEach(function(e){e.hidden=e.getAttribute("data-lingua")!==l;});
+    document.documentElement.lang=l==="en"?"en":"pt-PT";
+    btn.textContent=l==="en"?"Português":"English";
+    btn.setAttribute("aria-label",l==="en"?"Switch to Portuguese":"Mudar para inglês");
+    document.title=l==="en"?"Diário de Bordo — vehicle maintenance":"Diário de Bordo — manutenção de veículos";
+  }
+  var atual=location.hash==="#en"?"en":"pt";aplicar(atual);
+  btn.addEventListener("click",function(){atual=atual==="en"?"pt":"en";aplicar(atual);history.replaceState(null,"",atual==="en"?"#en":location.pathname);});
+})();
+</script>
+</body>
+</html>
